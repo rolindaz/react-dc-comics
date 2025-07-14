@@ -3,12 +3,12 @@ import Logo from './Logo'
 export default function Header() {
     return (
         <header className='bg-white text-black text-uppercase'>
-            <div className="container d-flex justify-content-between align-items-center">
+            <div className="container d-flex justify-content-between align-items-center py-3">
                 <div className="logo">
                     <Logo />
                 </div>
                 <nav>
-                    <ul className='d-flex gap-4 list-unstyled'>
+                    <ul className='d-flex gap-4 list-unstyled mb-0'>
                         <li>
                             <a className='text-black fw-bold text-decoration-none' href="#">Characters</a></li>
                         <li><a className='text-black fw-bold text-decoration-none' href="#">Comics</a></li>

@@ -15,18 +15,42 @@ header {
     img {
       width: 60%;
     }
-
-    padding: 1rem;
   }
 }
 
 main {
   .main-top {
-    height: 200px;
+    height: 150px;
   }
 
   .main-bottom {
     background-color: #3880F1;
-    height: 200px;
+    height: 150px;
+
+    .col {
+      height: 35%;
+    }
+  }
+}
+
+footer {
+  .footer-top {
+    height: 350px;
+    background-image: url(/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+      img {
+        width: 30%;
+        top: -26%;
+        left: 54%;
+      }
+    }
+  }
+
+  .footer-bottom {
+    height: 80px;
+    background-color: #303030;
   }
 }
