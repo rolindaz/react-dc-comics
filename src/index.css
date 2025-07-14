@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+header {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  .logo {
+    img {
+      width: 60%;
+    }
+
+    padding: 1rem;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
