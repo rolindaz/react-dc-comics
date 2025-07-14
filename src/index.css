@@ -5,13 +5,10 @@
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  background-color: white;
-  color: black;
-  text-transform: uppercase;
   font-size: 12px;
 
   .logo {
@@ -21,18 +18,15 @@ header {
 
     padding: 1rem;
   }
+}
 
-  nav {
-    ul {
-      list-style: none;
+main {
+  .main-top {
+    height: 200px;
+  }
 
-      li {
-        a {
-          text-decoration: none;
-          color: black;
-          font-weight: 600;
-        }
-      }
-    }
+  .main-bottom {
+    background-color: #3880F1;
+    height: 200px;
   }
 }
