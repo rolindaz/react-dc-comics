@@ -41,16 +41,48 @@ footer {
     background-size: cover;
 
     .row {
+      width: 35%;
+
+      .col {
+        max-width: 33%;
+        height: fit-content;
+        flex-shrink: 1;
+        flex-basis: 33%;
+
+        h5 {
+          font-size: 15px;
+        }
+
+        a {
+          color: #939392;
+          font-size: 12px;
+        }
+      }
+
+      .col-small {
+        top: 70%;
+      }
+
       img {
         width: 30%;
         top: -26%;
         left: 54%;
       }
+
     }
   }
 
   .footer-bottom {
     height: 80px;
     background-color: #303030;
+
+    button {
+      height: fit-content;
+      border-color: #3984FA;
+    }
+
+    span {
+      color: #3E82F5;
+    }
   }
 }
