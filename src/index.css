@@ -22,14 +22,14 @@ main {
   .main-top {
     height: 150px;
   }
+}
 
-  .main-bottom {
-    background-color: #3880F1;
-    height: 150px;
+.banner {
+  background-color: #3880F1;
+  height: 150px;
 
-    .col {
-      height: 35%;
-    }
+  .col {
+    height: 35%;
   }
 }
 
