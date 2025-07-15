@@ -10,10 +10,26 @@ body {
 
 header {
   font-size: 12px;
+  height: 80px;
 
   .logo {
     img {
       width: 60%;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a {
+          line-height: 48px;
+        }
+
+        .active {
+          color: #3880F1;
+          border-bottom: .25rem solid #3880F1;
+        }
+      }
     }
   }
 }
