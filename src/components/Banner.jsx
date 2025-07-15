@@ -6,8 +6,6 @@ import dcVisaIcon from "/img/buy-dc-power-visa.svg"
 
 export default function Banner() {
 
-    let rowHTML = []
-
     const iconCols = [
         {
             id: 1,
@@ -38,35 +36,55 @@ export default function Banner() {
 
     console.log(iconCols);
 
-    iconCols.forEach((col) => {
-
-        const {
-            id,
-            image,
-            title
-        } = col;
-
-
-        const colMarkup =
-            <div className="col text-align-center" key={id}>
-                <img className="h-100 me-2" src={image} alt={title} />
-                <span className="align-middle">
-                    {title}
-                </span>
-            </div>
-
-        rowHTML.push(colMarkup)
-
-    })
-    console.log(rowHTML);
-
     return (
         <div className="banner text-white text-uppercase">
             <div className="container h-100">
                 <div className="row h-100 align-items-center justify-content-around px-3">
-                    {rowHTML}
+                    {iconCols.map((col) => {
+                        return (
+                            <div className="col text-align-center" key={col.id}>
+                                <img className="h-100 me-2" src={col.image} alt={col.title} />
+                                <span className="align-middle">
+                                    {col.title}
+                                </span>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </div>
     )
 }
+
+/*iconCols.forEach((col) => {
+
+    const {
+        id,
+        image,
+        title
+    } = col;
+
+
+    const colMarkup =
+        <div className="col text-align-center" key={id}>
+            <img className="h-100 me-2" src={image} alt={title} />
+            <span className="align-middle">
+                {title}
+            </span>
+        </div>
+
+    rowHTML.push(colMarkup)
+
+})
+console.log(rowHTML);
+
+return (
+    <div className="banner text-white text-uppercase">
+        <div className="container h-100">
+            <div className="row h-100 align-items-center justify-content-around px-3">
+                {rowHTML}
+            </div>
+        </div>
+    </div>
+)
+}*/
