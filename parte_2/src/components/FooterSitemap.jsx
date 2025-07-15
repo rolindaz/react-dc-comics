@@ -7,27 +7,56 @@ export default function FooterSitemap() {
             <div className="container py-4">
                 <div className="row">
                     {
-                        websiteSections.map((section) => {
-                            return (
-                                <div className="col" key={section.id}>
-                                    <h5 className="text-white text-uppercase fw-bold">
-                                        {section.title}
-                                    </h5>
-                                    <ul className="list-unstyled">
-                                        {
-                                            section.content.map((item) => {
-                                                return (
-                                                    <li key={item.id}>
-                                                        <a href={item.link} className="text-decoration-none">
-                                                            {item.text}
-                                                        </a>
-                                                    </li>
-                                                )
+                        websiteSections.map((section, index) => {
+                            if (index != 3) {
+                                return (
+                                    <div className="col" key={section.id}>
+                                        <h5 className="text-white text-uppercase fw-bold">
+                                            {section.title}
+                                        </h5>
+                                        <ul className="list-unstyled">
+                                            {
+                                                section.content.map((item) => {
+                                                    return (
+                                                        <li key={item.id}>
+                                                            <a href={item.link} className="text-decoration-none">
+                                                                {item.text}
+                                                            </a>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+
+                                        {(index == 0) ? (
+                                            websiteSections.map((section, index) => {
+                                                if (index == 3) {
+                                                    return (
+                                                        <div className="col" key={section.id}>
+                                                            <h5 className="text-white text-uppercase fw-bold">
+                                                                {section.title}
+                                                            </h5>
+                                                            <ul className="list-unstyled">
+                                                                {
+                                                                    section.content.map((item) => {
+                                                                        return (
+                                                                            <li key={item.id}>
+                                                                                <a href={item.link} className="text-decoration-none">
+                                                                                    {item.text}
+                                                                                </a>
+                                                                            </li>
+                                                                        )
+                                                                    })
+                                                                }
+                                                            </ul>
+                                                        </div>
+                                                    )
+                                                }
                                             })
-                                        }
-                                    </ul>
-                                </div>
-                            )
+                                        ) : ''}
+                                    </div>
+                                )
+                            }
                         })
                     }
                     <img src="/img/dc-logo-bg.png" alt="Logo DC" className="z-3 position-absolute" />
