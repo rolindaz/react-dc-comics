@@ -6,26 +6,31 @@ import dcVisaIcon from "/img/buy-dc-power-visa.svg"
 
 export default function Banner() {
 
-    let rowHTML = ''
+    let rowHTML = []
 
     const iconCols = [
         {
+            id: 1,
             image: digitalIcon,
             title: "Digital Comics"
         },
         {
+            id: 2,
             image: merchandiseIcon,
             title: "DC Merchandise"
         },
         {
+            id: 3,
             image: subscriptionIcon,
             title: "Subscription"
         },
         {
+            id: 4,
             image: shopLocatorIcon,
             title: "Comic Shop Locator"
         },
         {
+            id: 5,
             image: dcVisaIcon,
             title: "DC Power Visa"
         }
@@ -36,22 +41,21 @@ export default function Banner() {
     iconCols.forEach((col) => {
 
         const {
+            id,
             image,
             title
         } = col;
 
 
         const colMarkup =
-            `
-            <div className="col text-align-center">
-                <img className="h-100 me-2" src=${image} alt=${title} />
+            <div className="col text-align-center" key={id}>
+                <img className="h-100 me-2" src={image} alt={title} />
                 <span className="align-middle">
-                    <${title} />
+                    {title}
                 </span>
             </div>
-            `
 
-        rowHTML += colMarkup
+        rowHTML.push(colMarkup)
 
     })
     console.log(rowHTML);
