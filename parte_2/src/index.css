@@ -35,8 +35,20 @@ header {
 }
 
 main {
-  .main-top {
+  height: 500px;
+
+  .thumbnail {
+    width: 150px;
     height: 150px;
+    overflow: hidden;
+
+    img {
+      object-position: top;
+    }
+  }
+
+  span {
+    font-size: 12px;
   }
 }
 
