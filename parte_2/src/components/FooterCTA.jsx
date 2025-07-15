@@ -1,3 +1,5 @@
+import socialIcons from "../../data/socialIcons"
+
 export default function FooterCTA() {
     return (
         <div className="footer-cta text-uppercase py-2">
@@ -10,14 +12,21 @@ export default function FooterCTA() {
                         Follow us
                     </span>
                     <div className="d-flex gap-3">
-                        <img src="/img/footer-facebook.png" alt="Facebook Icon" />
-                        <img src="/img/footer-twitter.png" alt="Twitter Icon" />
-                        <img src="/img/footer-youtube.png" alt="YouTube Icon" />
-                        <img src="/img/footer-pinterest.png" alt="Pinterest Icon" />
-                        <img src="/img/footer-periscope.png" alt="Periscope Icon" />
+                        {
+                            socialIcons.map((icon) => {
+                                return (
+                                    <img key={icon.id} src={icon.image} alt={icon.title} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+{/* <img src="/img/footer-facebook.png" alt="Facebook Icon" />
+<img src="/img/footer-twitter.png" alt="Twitter Icon" />
+<img src="/img/footer-youtube.png" alt="YouTube Icon" />
+<img src="/img/footer-pinterest.png" alt="Pinterest Icon" />
+<img src="/img/footer-periscope.png" alt="Periscope Icon" /> */}
