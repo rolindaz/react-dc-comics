@@ -4,7 +4,10 @@ export default function Main() {
 
     return (
         <main className="bg-black text-white fw-bold">
-            <div className="container d-flex align-items-center h-100 py-2">
+            <div className="container d-flex align-items-center h-100 py-2 position-relative flex-column justify-content-center gap-3">
+                <div className='text-white text-uppercase fw-bold position-absolute top-0 translate-middle current-series py-2 px-3'>
+                    Current series
+                </div>
                 <div className="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 h-100 align-items-center justify-content-around py-3">
                     {
                         comics.map((comic) => {
@@ -21,6 +24,9 @@ export default function Main() {
                         })
                     }
                 </div>
+                <button className="border-0 rounded-0 text-white text-uppercase fw-bold py-2 px-4 mb-4">
+                    Load more
+                </button>
             </div>
         </main>
     )

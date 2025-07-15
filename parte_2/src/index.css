@@ -43,20 +43,31 @@ header {
 }
 
 main {
-  height: 500px;
+  height: 600px;
 
-  .thumbnail {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
+  .current-series {
+    background-color: #3880F1;
+    left: 5%;
+  }
 
-    img {
-      object-position: top;
+  .row {
+    .thumbnail {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+
+      img {
+        object-position: top;
+      }
+    }
+
+    span {
+      font-size: 12px;
     }
   }
 
-  span {
-    font-size: 12px;
+  button {
+    background-color: #3880F1;
   }
 }
 
