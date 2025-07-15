@@ -1,59 +1,7 @@
 import Logo from './Logo'
+import navItems from '../../data/navItems'
 
 export default function Header() {
-
-    const navItems = [
-        {
-            id: 1,
-            text: 'Characters',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 2,
-            text: 'Comics',
-            dataStatus: 'active'
-        },
-        {
-            id: 3,
-            text: 'Movies',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 4,
-            text: 'TV',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 5,
-            text: 'Games',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 6,
-            text: 'Collectibles',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 7,
-            text: 'Videos',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 8,
-            text: 'Fans',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 9,
-            text: 'News',
-            dataStatus: 'inactive'
-        },
-        {
-            id: 10,
-            text: 'Shop',
-            dataStatus: 'inactive'
-        }
-    ]
 
     return (
         <header className='bg-white text-black text-uppercase'>
