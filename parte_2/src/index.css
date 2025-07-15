@@ -21,11 +21,19 @@ header {
   nav {
     ul {
       li {
-        a {
-          line-height: 58px;
+        &:hover {
+          a {
+            color: #3880F1;
+          }
         }
 
-        .active {
+        a {
+          line-height: 58px;
+          color: black;
+
+        }
+
+        a[status='active'] {
           color: #3880F1;
           border-bottom: .25rem solid #3880F1;
         }

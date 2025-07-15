@@ -1,9 +1,10 @@
 import comics from '../../data/comics'
 
 export default function Main() {
+
     return (
         <main className="bg-black text-white fw-bold">
-            <div className="container d-flex align-items-center h-100">
+            <div className="container d-flex align-items-center h-100 py-2">
                 <div className="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 h-100 align-items-center justify-content-around py-3">
                     {
                         comics.map((comic) => {
