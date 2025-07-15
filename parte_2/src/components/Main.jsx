@@ -1,10 +1,13 @@
 import comics from '../../data/comics'
+import Jumbotron from './Jumbotron'
+import Banner from './Banner'
 
 export default function Main() {
 
     return (
         <main className="bg-black text-white fw-bold">
-            <div className="container d-flex align-items-center h-100 py-2 position-relative flex-column justify-content-center gap-3">
+            <Jumbotron />
+            <div className="container d-flex align-items-center h-100 pb-2 pt-4 position-relative flex-column justify-content-center gap-3">
                 <div className='text-white text-uppercase fw-bold position-absolute top-0 translate-middle current-series py-2 px-3'>
                     Current series
                 </div>
@@ -28,6 +31,7 @@ export default function Main() {
                     Load more
                 </button>
             </div>
+            <Banner />
         </main>
     )
 }

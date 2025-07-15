@@ -43,8 +43,6 @@ header {
 }
 
 main {
-  height: 600px;
-
   .current-series {
     background-color: #3880F1;
     left: 5%;
@@ -87,7 +85,7 @@ main {
 }
 
 footer {
-  .footer-top {
+  .footer-sitemap {
     height: 350px;
     background-image: url(/img/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -125,7 +123,7 @@ footer {
     }
   }
 
-  .footer-bottom {
+  .footer-cta {
     height: 80px;
     background-color: #303030;
 
