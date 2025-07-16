@@ -1,6 +1,4 @@
-import socialIcons from "../../data/socialIcons"
-
-export default function FooterCTA() {
+export default function FooterCTA({ socialIcons }) {
     return (
         <div className="footer-cta text-uppercase py-2">
             <div className="container h-100 d-flex justify-content-between align-items-center">

@@ -1,7 +1,4 @@
-import Logo from './Logo'
-import navItems from '../../data/navItems'
-
-export default function Header() {
+export default function Header({ navItems, Logo }) {
 
     return (
         <header className='bg-white text-black text-uppercase'>

@@ -1,10 +1,4 @@
-import comics from '../../data/comics'
-import Jumbotron from './Jumbotron'
-import Banner from './Banner'
-import ComicCard from './ComicCard'
-
-export default function Main() {
-    const { id, title, thumb, series } = comics
+export default function Main({ Jumbotron, comics, ComicCard, Banner }) {
     return (
         <main className="bg-black text-white fw-bold">
             <Jumbotron />

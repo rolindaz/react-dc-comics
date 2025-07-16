@@ -1,6 +1,4 @@
-import websiteSections from "../../data/websiteSections"
-
-export default function FooterSitemap() {
+export default function FooterSitemap({ websiteSections }) {
 
     return (
         <div className="footer-sitemap position-relative overflow-hidden">

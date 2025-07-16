@@ -1,11 +1,8 @@
-import FooterSitemap from "./FooterSitemap";
-import FooterCTA from "./FooterCTA";
-
-export default function Footer() {
+export default function Footer({ FooterSitemap, FooterCTA }) {
     return (
         <footer>
-            <FooterSitemap />
-            <FooterCTA />
+            {FooterSitemap}
+            {FooterCTA}
         </footer>
     )
 }
