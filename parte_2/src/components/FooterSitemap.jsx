@@ -5,6 +5,7 @@ export default function FooterSitemap() {
     return (
         <div className="footer-sitemap position-relative overflow-hidden">
             <div className="container py-4">
+                <img src="/img/dc-logo-bg.png" alt="Logo DC" className="z-3 position-absolute" />
                 <div className="row">
                     {
                         websiteSections.map((section, index) => {
@@ -59,7 +60,6 @@ export default function FooterSitemap() {
                             }
                         })
                     }
-                    <img src="/img/dc-logo-bg.png" alt="Logo DC" className="z-3 position-absolute" />
                 </div>
             </div>
         </div>

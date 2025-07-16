@@ -86,20 +86,20 @@ main {
 
 footer {
   .footer-sitemap {
-    height: 350px;
     background-image: url(/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
+    img {
+      width: 28%;
+      top: -25%;
+      right: 17%;
+    }
+
     .row {
-      width: 35%;
+      width: 40%;
 
       .col {
-        max-width: 33%;
-        height: fit-content;
-        flex-shrink: 1;
-        flex-basis: 33%;
-
         h5 {
           font-size: 15px;
         }
@@ -109,17 +109,6 @@ footer {
           font-size: 12px;
         }
       }
-
-      .col-small {
-        top: 70%;
-      }
-
-      img {
-        width: 30%;
-        top: -26%;
-        left: 54%;
-      }
-
     }
   }
 
