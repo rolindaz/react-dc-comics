@@ -1,6 +1,7 @@
 import comics from '../../data/comics'
 import Jumbotron from './Jumbotron'
 import Banner from './Banner'
+import ComicCard from './ComicCard'
 
 export default function Main() {
 
@@ -15,14 +16,7 @@ export default function Main() {
                     {
                         comics.map((comic) => {
                             return (
-                                <div className="col d-flex flex-column gap-3" key={comic.id}>
-                                    <div className='thumbnail'>
-                                        <img className="w-100 h-100 d-block object-fit-cover" src={comic.thumb} alt={comic.title} />
-                                    </div>
-                                    <span className='d- block text-uppercase text-white fw-normal text-start w-100'>
-                                        {comic.series}
-                                    </span>
-                                </div>
+                                <ComicCard />
                             )
                         })
                     }
