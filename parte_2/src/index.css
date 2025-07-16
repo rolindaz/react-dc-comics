@@ -119,6 +119,10 @@ footer {
     button {
       height: fit-content;
       border-color: #3984FA;
+
+      &:hover {
+        background-color: #3880F1;
+      }
     }
 
     span {
